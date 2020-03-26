@@ -69,6 +69,7 @@ app.post('/capstone2020', function(req, res) {
 	
 	console.log(`statusCode: ${res.statusCode}`);
 	console.log(req.body);
+	res.send(JSON.stringify(req.body));
 });
 
 http.createServer(app).listen(8000, function() {
