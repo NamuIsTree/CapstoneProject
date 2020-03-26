@@ -9,8 +9,6 @@ var app = express();
 
 app.use(bodyParser.urlencoded({extended: true}));
 
-// code starts
-
 function getUserIP(req) {
 	const addr = req.headers['x-forwarded-for'] || req.connection.remoteAddress;
 	var str_addr = addr.toString();
