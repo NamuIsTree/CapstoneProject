@@ -4,7 +4,7 @@ const date    = require('date-utils');
 const cron    = require('node-cron');
 
 const url = 'http://api.openweathermap.org/data/2.5/weather?lat=37.57&lon=126.98&APPID=';
-const key = 'a6b981c458c02b9c1e20b0576cebae2e';
+const key = '... Private API Key ...';
 
 cron.schedule('0,10,20,30,40,50 * * * *', () => {
 request.get(url + key, (err, res, body) => {
