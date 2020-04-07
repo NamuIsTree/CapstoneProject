@@ -24,7 +24,7 @@ app.get('/graph', function (req, res) {
 
       var data = "";
       var comma = ""
-      for (var i=0; i < 288; i++) {
+      for (var i=rows.length - 1; i >= rows.length - 288; i++) {
          r = rows[i];
 	 var ddate = new Date(r.date);
 	 ddate.add({hours: 9});
