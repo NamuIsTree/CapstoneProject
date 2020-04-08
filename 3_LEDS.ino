@@ -39,8 +39,7 @@ void loop() {
   int Case = 1;
 
   if (distance < 100) Case = 5;
-  else if (distance < 200) Case = 3
-  .....;
+  else if (distance < 200) Case = 3;
 
   digitalWrite (led[0], HIGH);
   digitalWrite (led[2], HIGH);
