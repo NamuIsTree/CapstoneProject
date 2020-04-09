@@ -7,8 +7,8 @@
 OneWire oneWire(ONE_WIRE_BUS);
 
 DallasTemperature sensors(&oneWire);
-const char* ssid = "olleh_GiGA_WiFi_FB70";
-const char* password = "0000006036";
+const char* ssid = "SSID";
+const char* password = "****";
 
 String Url = "http://107.23.254.187:8080/sensorData?";
 String DeviceId = "device_id=1&";
